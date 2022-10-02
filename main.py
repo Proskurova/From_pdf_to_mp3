@@ -1,5 +1,6 @@
+# Программа с помощью библиотеки pdfplumber, которая певодит PDF в mp3 файл.
+
 from gtts import gTTS
-from art import tprint
 import pdfplumber
 from pathlib import Path
 
@@ -24,7 +25,6 @@ def pdf_to_mp3(file_path='test.pdf', language='en'):
 
 
 def main():
-    tprint('PDF>>TO>>MP3', font='bulbhead')
     file_path = input("\nEnter a file's path: ")
     language = input("Choose language, for example 'en' or 'ru': ")
     print(pdf_to_mp3(file_path=file_path, language=language))
